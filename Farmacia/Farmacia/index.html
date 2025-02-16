@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Inicio</title>
+    <style>
+        /*estilo del encabezado */
+
+@font-face {
+    font-family: SANTELLO;
+    src: url(SANTELLO.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgba(228, 202, 146, 0.945);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.titulo{
+     
+    text-align: center;
+    color: rgba(228, 202, 146, 0.945);
+    font-size: 80px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.menu{
+    margin: auto;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.menu ul a{
+    font-family: SANTELLO ;
+    font-size: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    text-shadow: 0 0 5px;
+}
+
+.menu ul li{
+    margin:0px 40px;
+}
+
+#imgfarm{
+    width: 25%;
+    text-align: justify;
+    padding-left: 15%;
+}
+
+#imgfar{
+    width: 10%;
+}
+
+/*estilo del inicio */
+.recuadro {
+    border: 2px solid #0202022c;
+    border-radius: 8px;
+    padding: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+    background-color:rgba(187, 168, 115, 0.596);
+}
+
+form {
+    width: 1080px;
+    background-color:rgba(218, 161, 124, 0.836);
+    border-radius: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-family: SANTELLO;
+    color: rgba(255, 255, 255, 0.741);
+    font-size: 40px;
+}
+
+p{
+    color: #ffffff;
+}
+label {
+    display: block;
+    margin: 5px 0 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+input, select, textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #0a0a0a54;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;    
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.872);
+}
+
+h1.titulo {
+    color: rgba(228, 202, 146, 0.945);
+    text-align: center;
+    margin-top: 20px;
+}
+
+section.intro {
+    background-color: rgba(228, 202, 146, 0.945);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section.intro h2 {
+    color: #000000;
+    text-align: center;
+}
+
+section.intro p {
+    color: #000000;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+section.intro ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+    padding: 0;
+}
+
+section.intro ul li {
+    margin: 5px 0;
+}
+
+section.intro h3 {
+    color: #000000;
+    margin-top: 20px;
+}
+
+/* Estilo para las columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 10px;
+}
+
+.column.small {
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.column.large {
+    flex: 2;
+    max-width: 70%;
+    box-sizing: border-box;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color:rgba(228, 202, 146, 0.945);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #000000;
+    font-size: 1em;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header> 
+       
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" target="_blank">Inicio</a></li>
+                <li><a href="stock.html" target="_blank">Stock</a></li>
+                <li><a href="ventas.php" target="_blank">Ventas</a></li>
+                <li><a href="empleados.html" target="_blank">Empleados</a></li>
+                <li><a href="clientes.html" target="_blank">Clientes</a></li>
+            </ul>
+        </nav>
+        <img src="logo.avif" alt="farmaciaprincipal" id="imgfar">
+    </header>
+    
+    <h1 class="titulo">Farmacia</h1>
+
+    <div class="recuadro">
+   
+    <section class="intro recuadro">
+        <h2>Bienvenidos a Nuestra Farmacia</h2>
+        <p>Somos una farmacia comprometida con la salud y el bienestar de nuestra comunidad. Aquí encontrarás una amplia variedad de productos farmacéuticos, suplementos, y artículos de cuidado personal, todos seleccionados cuidadosamente para garantizar la mejor calidad.</p>
+        <p>Somos Valentina y Santiago los dueños de esta farmacia. Nuestro equipo y nosotros estamos dedicados a ofrecerte la mejor atención y asesoramiento posible. Con años de experiencia en el sector farmacéutico, nuestro objetivo es asegurarnos de que recibas el tratamiento y los productos adecuados para tus necesidades.</p>
+        <img src="farma.jpeg" alt="farmaciaprincipal" id="imgfarm">
+        <img src="farmacia.jpeg" alt="farmaciaprincipal" id="imgfarm">
+        <div class="row">
+            <div class="column small">
+                <h3>Misión</h3>
+                <p>Proveer productos farmacéuticos de alta calidad y servicios de salud personalizados para mejorar la vida de nuestra comunidad.</p>
+                <h3>Visión</h3>
+                <p>Ser la farmacia líder en atención al cliente y servicios de salud en nuestra región, reconocida por nuestro compromiso y excelencia.</p>
+            </div>
+            <div class="column large">
+                <h3>Objetivos</h3>
+                <ul>
+                    <li>Ofrecer una amplia gama de productos de salud y bienestar.</li>
+                    <li>Proporcionar asesoramiento experto y personalizado a nuestros clientes.</li>
+                    <li>Mantener un ambiente acogedor y profesional.</li>
+                    <li>Implementar programas de fidelidad y promociones para nuestros clientes.</li>
+                </ul>
+                <h3>Historia</h3>
+                <p>Nuestra farmacia fue fundada en 1990 con el objetivo de proporcionar servicios farmacéuticos de alta calidad a nuestra comunidad. Desde entonces, hemos crecido y expandido nuestros servicios, siempre manteniendo nuestro compromiso con la salud y el bienestar de nuestros clientes. A lo largo de los años, hemos establecido relaciones sólidas con proveedores y médicos locales, lo que nos permite ofrecer los mejores productos y servicios disponibles.</p>
+            </div>
+        </div>
+        <img src="ioma.jpg" alt="farmaciaprincipal" id="imgfarm">
+        <img src="pami.jpeg" alt="farmaciaprincipal" id="imgfarm">
+        <h3>Nuestros Servicios</h3>
+        <ul>
+            <li><strong>Asesoramiento Personalizado:</strong> Nuestro personal capacitado está siempre disponible para brindarte información y recomendaciones sobre el uso de medicamentos y productos de salud.</li>
+            <li><strong>Entrega a Domicilio:</strong> Ofrecemos un servicio de entrega a domicilio para que puedas recibir tus medicamentos y productos de salud directamente en la comodidad de tu hogar.</li>
+            <li><strong>Control de Salud:</strong> Realizamos controles de salud como la medición de la presión arterial y el monitoreo de glucosa en sangre.</li>
+            <li><strong>Programas de Fidelidad:</strong> Únete a nuestro programa de fidelidad y disfruta de descuentos exclusivos y promociones especiales.</li>
+        </ul>
+        <img src="firma.webp" alt="farmaciaprincipal" id="imgfarm">
+        <img src="presion.jpg" alt="farmaciaprincipal" id="imgfarm">
+        <h3>Nuestro Compromiso</h3>
+        <p>En nuestra farmacia, tu salud es nuestra prioridad. Nos esforzamos por mantener un ambiente acogedor y profesional donde puedas sentirte cómodo al consultar sobre tus necesidades de salud. Trabajamos estrechamente con proveedores y médicos para asegurarnos de que recibas los mejores productos y servicios.</p>
+        <p>Agradecemos tu confianza en nosotros y estamos aquí para ayudarte en todo lo que necesites. No dudes en visitarnos o contactarnos para cualquier consulta o asesoramiento.</p>
+    </section>
+    <footer>
+        <p id="pie"> @Valentina R. y @Santiago T.
+            <br>
+            Diseño web dinamico 2024, 7°2
+        </p>
+    </footer>
+    
+</body>
+</html>

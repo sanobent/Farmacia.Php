@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <style>
+        /*estilo del encabezado */
+
+@font-face {
+    font-family: SANTELLO;
+    src: url(SANTELLO.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#stock{
+    background-color: rgba(228, 202, 146, 0.945);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+
+
+.titulo{
+     
+        text-align: center;
+        color: rgba(228, 202, 146, 0.945);
+        font-size: 80px; 
+        font-weight: bold; 
+        text-transform: uppercase; 
+        letter-spacing: 2px;
+        margin-bottom: 20px; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+.menu{
+    margin: auto;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.menu ul a{
+    font-family: SANTELLO ;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 0 0 5px;
+}
+
+.menu ul li{
+    margin:0px 40px;
+}
+
+#imgfarr{
+    width: 15%;
+}
+
+/*estilo del stock*/
+
+
+.recuadro {
+    border: 2px solid #0202022c;
+    border-radius: 8px;
+    padding: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+    padding-left: 10%;
+    background-color:rgba(178, 159, 117, 0.779);
+}
+
+
+
+form {
+    width: 1080px;
+    background-color: rgba(228, 202, 146, 0.945);
+    border-radius: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-family: SANTELLO;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+p{
+    color: #ffffff;
+}
+label {
+    display: block;
+    margin: 5px 0 5px;
+    color:  rgb(255, 255, 255);
+}
+
+input, select, textarea {
+    width: 30%;
+    padding: 5px;
+    margin: 5px 0 10px;
+    border: 1px solid #0a0a0a54;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;    
+}
+
+.boton {
+    padding: 10px 10px;
+    background-color: #ffffff;
+    color:  rgba(228, 202, 146, 0.945);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px;
+    width: 110px;
+}
+
+.boton :hover {
+    background-color: #bdaf85;
+}
+ /* Estilo del pie de página */
+footer {
+    background-color: rgba(228, 202, 146, 0.945);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #000000;
+    font-size: 1em;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header id="stock">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" target="_blank"> Inicio </a></li>
+                <li><a href="stock.html" target="_blank"> Stock </a></li>
+                <li><a href="ventas.php" target="_blank">  Ventas </a></li>
+                <li><a href="empleados.html" target="_blank"> Empleados </a></li>
+                <li><a href="clientes.html" target="_blank"> Clientes </a></li>
+            </ul>
+        </nav>
+        <img src="stock.png" alt="farmaciaprincipal" id="imgfarr">
+    </header>
+
+        <h1 class="titulo"> Farmacia </h1>
+        
+
+            <div class="recuadro">
+                
+        <form action="stock.php" method="POST">
+                    <h1> Stock </h1>
+            <label for="ID"> ID </label>
+            <input type="text" name="id" id="ID" placeholder="Se genera automáticamente" disabled>
+          
+            <label for="nombre">Nombre del producto:</label>
+            <input type="text" id="nombre" name="nombre" >
+            
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" >
+            
+            <label for="categoria">Categoría o tipo de producto:</label>
+            <select id="categoria" name="categoria">
+                <option value="Analgésicos">Analgésicos</option>
+                <option value="Antibióticos">Antibióticos</option>
+                <option value="Vitaminas">Vitaminas</option>
+                <option value="Productos de cuidado personal">Productos de cuidado personal</option>
+            </select>
+            
+            <label for="principio_activo">Principio activo:</label>
+            <select id="principio_activo" name="principio_activo">
+                <option value="Ibuprofeno">Ibuprofeno</option>
+                <option value="Paracetamol">Paracetamol</option>
+                <option value="Amoxicilina">Amoxicilina</option>
+            </select>
+            
+            <label for="concentracion">Concentración o dosificación:</label>
+            <select id="concentracion" name="concentracion" >
+                <option value="mg/ml">mg/ml</option>
+                <option value="UI">UI</option>
+                <option value="g">g</option>
+            </select>
+            
+            <label for="forma_farmaceutica">Forma farmacéutica:</label>
+            <select id="forma_farmaceutica" name="forma_farmaceutica" >
+                <option value="Comprimidos">Comprimidos</option>
+                <option value="Cápsulas">Cápsulas</option>
+                <option value="Jarabe">Jarabe</option>
+            </select>
+            
+            <label for="presentacion">Presentación:</label>
+            <input type="text" id="presentacion" name="presentacion" >
+            
+            <label for="fecha_caducidad">Fecha de caducidad:</label>
+            <input type="date" id="fecha_caducidad" name="fecha_caducidad" >
+            
+            <label for="registro_sanitario">Número de registro sanitario:</label>
+            <input type="text" id="registro_sanitario" name="registro_sanitario" >
+            
+            <label>IVA:</label>
+            <div class="radio-group">
+            
+                <label for="iva_si">Sí</label>
+                <input type="radio" id="iva_si" name="iva" value="si">
+                <label for="iva_no">No</label>
+                <input type="radio" id="iva_no" name="iva" value="no" >
+               
+            </div>
+            
+            <label for="precio">Precio de venta al público:</label>
+            <input type="number" id="precio" name="precio" min="0" step="0.01" >
+            
+            <label for="stock">Stock disponible:</label>
+            <input type="number" id="disp" name="disp" min="0" >
+            
+            <label for="codigo_barras">Código de barras:</label>
+            <input type="text" id="codigo_barras" name="codigo_barras" >
+            <br>
+            <input class="boton" type="submit" name="cargar" value="Cargar datos">
+            <input class="boton" type="submit" name="modificar" value="Modificar datos">
+            <input class="boton" type="submit" name="mostrar" value="Mostrar datos">
+          
+        </form>
+            </div>
+            
+        <footer>
+            <p id="pie"> @Valentina R. y @Santiago T.
+                <br>
+                Diseño web dinamico 2024, 7°2
+            </p>
+        </footer>
+        
+</body>
+</html>             
+         
+     
+ 
+
+
+
+
+

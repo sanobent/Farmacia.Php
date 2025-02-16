@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <style>
+        /*estilo del encabezado */
+
+@font-face {
+    font-family: SANTELLO;
+    src: url(SANTELLO.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#stock{
+    background-color: rgba(228, 202, 146, 0.945);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+.titulo{
+     
+        text-align: center;
+        color: rgba(228, 202, 146, 0.945);
+        font-size: 80px; 
+        font-weight: bold; 
+        text-transform: uppercase; 
+        letter-spacing: 2px;
+        margin-bottom: 20px; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+.menu{
+    margin: auto;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.menu ul a{
+    font-family: SANTELLO ;
+    font-size: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    text-shadow: 0 0 5px;
+}
+
+.menu ul li{
+    margin:0px 40px;
+}
+
+#imgfarr{
+    width: 17%;
+}
+
+/* estilo de clientes */
+
+.recuadro {
+    border: 2px solid #0202022c;
+    border-radius: 8px;
+    padding: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+    padding-left: 10%;
+    background-color: rgba(178, 159, 117, 0.779);
+}
+
+
+
+form {
+    width: 1080px;
+    background-color: rgba(228, 202, 146, 0.945);
+    border-radius: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-family: SANTELLO;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+label {
+    display: block;
+    margin: 5px 0 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+input, select, textarea {
+    width: 30%;
+    padding: 5px;
+    margin: 5px 0 19px;
+    border: 1px solid #0a0a0a54;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    
+    
+}
+
+
+.boton {
+    padding: 10px 10px;
+    background-color: #ffffff;
+    color: rgba(228, 202, 146, 0.945);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px;
+    width: 110px;
+}
+
+.boton :hover {
+    background-color: rgba(228, 202, 146, 0.945);
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: rgba(199, 176, 127, 0.945);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #000000;
+    font-size: 1em;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header id="stock">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" target="_blank"> Inicio </a></li>
+                <li><a href="stock.html" target="_blank"> Stock </a></li>
+                <li><a href="ventas.php" target="_blank">  Ventas </a></li>
+                <li><a href="empleados.html" target="_blank"> Empleados </a></li>
+                <li><a href="clientes.html" target="_blank"> Clientes </a></li>
+            </ul>
+        </nav>
+        <img src="clientes.png" alt="farmaciaprincipal" id="imgfarr">
+    </header>
+    <h1 class="titulo"> Farmacia </h1>
+    <div class="recuadro">
+        
+        <form action="clientes.php" method="POST">
+            <h1>Formulario de Cliente</h1>
+            
+            <label for="1">Nombre Completo:</label>
+            <input type="text" id="1" name="NombreCompleto" >
+            <br>
+    
+            <label for="2">Correo Electrónico:</label>
+            <input type="email" id="2" name="Email" >
+            <br>
+    
+            <label for="3">Número de Teléfono:</label>
+            <input type="tel" id="3" name="Telefono" >
+            <br>
+    
+            <label for="4">Género:</label>
+            <select id="4" name="Genero" >
+                <option value="">Seleccione una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br>
+    
+            <label for="5">DNI:</label>
+            <input type="number" id="5" name="DNI" >
+            <br>
+    
+            <label for="6">Preferencias de productos/servicios:</label>
+            <textarea id="6" name="Preferencias" rows="4" ></textarea>
+            <br>
+    
+            <label for="7">Intereses:</label>
+            <textarea id="7" name="Intereses" rows="4" ></textarea>
+            <br>
+
+            <label for="8">Fecha de registro:</label>
+            <input type="date" id="8" name="FechaRegistro" >
+            <br>
+            
+            <input class="boton" type="submit" name="cargar" value="Cargar datos">
+            <input class="boton" type="submit" name="modificar" value="Modificar datos">
+            <input class="boton" type="submit" name="mostrar" value="Mostrar datos">
+        </form>
+        </div>
+        <footer>
+            <p id="pie"> @Valentina R. y @Santiago T.
+                <br>
+                Diseño web dinamico 2024, 7°2
+            </p>
+        </footer>
+</body>
+</html>
